@@ -1,12 +1,8 @@
- <h1>{{title}}</h1>
-  <p>Users:</p>
-  <ul>
-    <li *ngFor=" let user of this.data">
-    	Name : {{user.firstName}} {{user.lastName}}<br>
-    	Email : {{user.email}}<br>
-        Mobile Number : {{user.mobile}}<br>
-        Type : {{user.type}}
-      <hr> 
+ <ul>
+      <li><a [routerLink] = "['/Users']">Users</a></li>
+      <li><a [routerLink] = "['/Product']">Product</a></li>
+      <li><a [routerLink] = "['/Orders']">Orders</a></li>
+   </ul>
+   <router-outlet></router-outlet>
 
-    </li>
-  </ul>
+ 
